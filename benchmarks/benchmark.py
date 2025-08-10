@@ -89,7 +89,22 @@ class BaseBenchmark(ABC):
 
         async def sem_evaluate(problem):
             async with semaphore:
-                return await self.evaluate_problem(problem, agent)
+                try:
+                    return await self.evaluate_problem(problem, agent)
+                except Exception as e:
+                    # Per-problem failure: return a zero-score row and continue
+                    from scripts.logs import logger
+                    logger.error(f"Error evaluating problem; continuing with 0 score: {e}")
+                    # best-effort fallback fields
+                    question = problem.get("question") or problem.get("prompt") or problem.get("problem") or str(problem)
+                    # Try to build a row of correct width for current benchmark
+                    cols = self.get_result_columns()
+                    # default tuple: question, prediction, expected, score, cost
+                    fallback = (question, str(e), "", 0.0, 0.0)
+                    # If benchmark expects 6 fields (Combined), prepend a type placeholder
+                    if len(cols) == 6:
+                        return ("unknown",) + fallback
+                    return fallback
 
         tasks = [sem_evaluate(problem) for problem in data]
         return await tqdm_asyncio.gather(*tasks, desc=f"Evaluating {self.name} problems", total=len(data))

@@ -138,9 +138,10 @@ class ScEnsemble(Operator):
         response = await self._fill_node(ScEnsembleOp, prompt, mode="xml_fill")
 
         answer = response.get("solution_letter", "")
-        answer = answer.strip().upper()
-
-        return {"response": solutions[answer_mapping[answer]]}
+        answer = (answer or "").strip().upper()
+        # Fallback to the first solution if the returned letter is invalid
+        selected_index = answer_mapping.get(answer, 0)
+        return {"response": solutions[selected_index]}
 
 
 def run_code(code):

@@ -1,10 +1,15 @@
+# -*- coding: utf-8 -*-
+# @Date    : 6/27/2024 22:07 PM
+# @Author  : didi
+# @Desc    : Basic Graph Class
+
 from typing import Literal
-import workspace.HumanEval.workflows.template.operator as operator
-import workspace.HumanEval.workflows.round_1.prompt as prompt_custom
-from scripts.async_llm import create_llm_instance
+import metagpt.ext.aflow.scripts.optimized.HumanEval.workflows.template.operator as operator
+import metagpt.ext.aflow.scripts.optimized.HumanEval.workflows.round_1.prompt as prompt_custom
+from metagpt.provider.llm_provider_registry import create_llm_instance
+from metagpt.utils.cost_manager import CostManager
 
-from scripts.evaluator import DatasetType
-
+DatasetType = Literal["HumanEval", "MBPP", "GSM8K", "MATH", "HotpotQA", "DROP"]
 
 class Workflow:
     def __init__(
@@ -16,6 +21,7 @@ class Workflow:
         self.name = name
         self.dataset = dataset
         self.llm = create_llm_instance(llm_config)
+        self.llm.cost_manager = CostManager()
         self.custom = operator.Custom(self.llm)
         self.custom_code_generate = operator.CustomCodeGenerate(self.llm)
 
@@ -27,4 +33,4 @@ class Workflow:
         """
         # await self.custom(input=, instruction="") 
         solution = await self.custom_code_generate(problem=problem, entry_point=entry_point, instruction="") # But When you want to get standard code ,you should use customcodegenerator.
-        return solution['response'], self.llm.get_usage_summary()["total_cost"]
+        return solution['response'], self.llm.cost_manager.total_cost

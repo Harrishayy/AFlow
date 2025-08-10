@@ -49,11 +49,24 @@ Note: In custom, the input and instruction are directly concatenated(instruction
 """
 
 WORKFLOW_TEMPLATE = """from typing import Literal
-import workspace.{dataset}.workflows.template.operator as operator
+import sys
+import os
+import importlib.util
+
+# Ensure template operator is loaded from local path and not stdlib 'operator'
+template_dir = os.path.join(os.path.dirname(__file__), '..', 'template')
+operator_file = os.path.join(template_dir, 'operator.py')
+if template_dir not in sys.path:
+    sys.path.insert(0, template_dir)
+spec = importlib.util.spec_from_file_location("combined_template_operator", operator_file)
+custom_operator = importlib.util.module_from_spec(spec)
+assert spec is not None and spec.loader is not None
+spec.loader.exec_module(custom_operator)
+# Backwards-compat alias so graphs that refer to `operator` still work
+operator = custom_operator
+
 import workspace.{dataset}.workflows.round_{round}.prompt as prompt_custom
-from scripts.async_llm import create_llm_instance
-
-
+from scripts.async_llm import AsyncLLM, create_llm_instance
 from scripts.evaluator import DatasetType
 
 {graph}

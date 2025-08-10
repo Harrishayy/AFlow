@@ -7,24 +7,36 @@ import random
 import sys
 import traceback
 from collections import Counter
-from typing import Dict, List, Tuple, Optional
+from typing import Dict, List, Tuple
 
-from scripts.formatter import BaseFormatter, FormatError, XmlFormatter, CodeFormatter, TextFormatter
-from workspace.MBPP.workflows.template.operator_an import *
-from workspace.MBPP.workflows.template.op_prompt import *
-from scripts.async_llm import AsyncLLM
-from scripts.logs import logger
-import asyncio
+from metagpt.ext.aflow.scripts.optimized.MBPP.workflows.template.operator_an import *
+from metagpt.ext.aflow.scripts.optimized.MBPP.workflows.template.op_prompt import *
+from metagpt.ext.aflow.scripts.utils import extract_test_cases_from_jsonl, test_case_2_test_function
+from metagpt.actions.action_node import ActionNode
+from metagpt.llm import LLM
+from metagpt.logs import logger
+import re
 
-from scripts.utils.code import extract_test_cases_from_jsonl, test_case_2_test_function
 
+class Operator:
+    def __init__(self, llm: LLM, name: str):
+        self.name = name
+        self.llm = llm
 
-from scripts.operators import Operator
+    def __call__(self, *args, **kwargs):
+        raise NotImplementedError
 
+    async def _fill_node(self, op_class, prompt, mode=None, **extra_kwargs):
+        fill_kwargs = {"context": prompt, "llm": self.llm}
+        if mode:
+            fill_kwargs["mode"] = mode
+        fill_kwargs.update(extra_kwargs)
+        node = await ActionNode.from_pydantic(op_class).fill(**fill_kwargs)
+        return node.instruct_content.model_dump()
 
 
 class Custom(Operator):
-    def __init__(self, llm: AsyncLLM, name: str = "Custom"):
+    def __init__(self, llm: LLM, name: str = "Custom"):
         super().__init__(llm, name)
 
     async def __call__(self, input, instruction):
@@ -33,7 +45,7 @@ class Custom(Operator):
         return response
     
 class CustomCodeGenerate(Operator):
-    def __init__(self, llm: AsyncLLM, name: str = "CustomCodeGenerate"):
+    def __init__(self, llm: LLM, name: str = "CustomCodeGenerate"):
         super().__init__(llm, name)
 
     async def __call__(self, problem, entry_point, instruction):
@@ -50,7 +62,7 @@ class ScEnsemble(Operator):
     Link: https://arxiv.org/abs/2311.17311
     """
 
-    def __init__(self, llm: AsyncLLM, name: str = "ScEnsemble"):
+    def __init__(self, llm: LLM, name: str = "ScEnsemble"):
         super().__init__(llm, name)
 
     async def __call__(self, solutions: List[str], problem: str):
@@ -69,7 +81,7 @@ class ScEnsemble(Operator):
         return {"response": solutions[answer_mapping[answer]]}
 
 class Test(Operator):
-    def __init__(self, llm: AsyncLLM, name: str = "Test"):
+    def __init__(self, llm: LLM, name: str = "Test"):
         super().__init__(llm, name)
 
     def exec_code(self, solution, entry_point):
@@ -126,7 +138,7 @@ class Test(Operator):
                     test_fail="executed unsucessfully",
                 )
                 response = await self._fill_node(ReflectionTestOp, prompt, mode="code_fill")
-                solution = response["response"]
+                solution = response["reflection_and_solution"]
             else:
                 prompt = REFLECTION_ON_PUBLIC_TEST_PROMPT.format(
                     problem=problem,
@@ -135,7 +147,7 @@ class Test(Operator):
                     test_fail=result,
                 )
                 response = await self._fill_node(ReflectionTestOp, prompt, mode="code_fill")
-                solution = response["response"]
+                solution = response["reflection_and_solution"]
         
         result = self.exec_code(solution, entry_point)
         if result == "no error":

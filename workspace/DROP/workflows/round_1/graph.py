@@ -1,9 +1,15 @@
-from typing import Literal
-import workspace.DROP.workflows.template.operator as operator
-import workspace.DROP.workflows.round_1.prompt as prompt_custom
-from scripts.async_llm import create_llm_instance
+# -*- coding: utf-8 -*-
+# @Date    : 6/27/2024 22:07 PM
+# @Author  : didi
+# @Desc    : Basic Graph Class
 
-from scripts.evaluator import DatasetType
+from typing import Literal
+import metagpt.ext.aflow.scripts.optimized.DROP.workflows.template.operator as operator
+import metagpt.ext.aflow.scripts.optimized.DROP.workflows.round_1.prompt as prompt_custom
+from metagpt.provider.llm_provider_registry import create_llm_instance
+from metagpt.utils.cost_manager import CostManager
+
+DatasetType = Literal["HumanEval", "MBPP", "GSM8K", "MATH", "HotpotQA", "DROP"]
 
 class Workflow:
     def __init__(
@@ -15,6 +21,7 @@ class Workflow:
         self.name = name
         self.dataset = dataset
         self.llm = create_llm_instance(llm_config)
+        self.llm.cost_manager = CostManager()
         self.custom = operator.Custom(self.llm)
 
     async def __call__(self, problem: str):
@@ -22,4 +29,4 @@ class Workflow:
         Implementation of the workflow
         """
         solution = await self.custom(input=problem, instruction="")
-        return solution['response'], self.llm.get_usage_summary()["total_cost"]
+        return solution['response'], self.llm.cost_manager.total_cost

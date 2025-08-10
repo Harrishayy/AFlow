@@ -4,6 +4,10 @@
 # @Desc    : 
 
 from openai import AsyncOpenAI
+try:
+    import google.generativeai as genai  # type: ignore
+except Exception:
+    genai = None
 from scripts.formatter import BaseFormatter, FormatError
 
 import yaml
@@ -12,11 +16,12 @@ from typing import Dict, Optional, Any
 
 class LLMConfig:
     def __init__(self, config: dict):
-        self.model = config.get("model", "gpt-4o-mini")
+        self.model = config.get("model", "gpt-4o")
         self.temperature = config.get("temperature", 1)
         self.key = config.get("key", None)
         self.base_url = config.get("base_url", "https://oneapi.deepwisdom.ai/v1")
         self.top_p = config.get("top_p", 1)
+        self.api_type = config.get("api_type", "openai")
 
 class LLMsConfig:
     """Configuration manager for multiple LLM configurations"""
@@ -75,6 +80,8 @@ class LLMsConfig:
             "base_url": config.get("base_url", "https://oneapi.deepwisdom.ai/v1"),
             "top_p": config.get("top_p", 1)  # Add top_p parameter
         }
+        if "api_type" in config:
+            llm_config["api_type"] = config.get("api_type")
         
         # Create and return an LLMConfig instance with the specified configuration
         return LLMConfig(llm_config)
@@ -177,46 +184,55 @@ class AsyncLLM:
         
         # At this point, config should be an LLMConfig instance
         self.config = config
-        self.aclient = AsyncOpenAI(api_key=self.config.key, base_url=self.config.base_url)
+        self.api_type = getattr(self.config, "api_type", "openai")
+        self.aclient = None
+        if self.api_type == "openai":
+            self.aclient = AsyncOpenAI(api_key=self.config.key, base_url=self.config.base_url)
+        elif self.api_type == "gemini":
+            if genai is None:
+                raise ImportError("google-generativeai is not installed. Please add 'google-generativeai' to dependencies.")
+            genai.configure(api_key=self.config.key)
         self.sys_msg = system_msg
         self.usage_tracker = TokenUsageTracker()
         
     async def __call__(self, prompt):
-        message = []
-        if self.sys_msg is not None:
-            message.append({
-                "content": self.sys_msg,
-                "role": "system"
-            })
+        if self.api_type == "openai":
+            message = []
+            if self.sys_msg is not None:
+                message.append({
+                    "content": self.sys_msg,
+                    "role": "system"
+                })
+            message.append({"role": "user", "content": prompt})
 
-        message.append({"role": "user", "content": prompt})
+            response = await self.aclient.chat.completions.create(
+                model=self.config.model,
+                messages=message,
+                temperature=self.config.temperature,
+                top_p = self.config.top_p,
+            )
 
-        response = await self.aclient.chat.completions.create(
-            model=self.config.model,
-            messages=message,
-            temperature=self.config.temperature,
-            top_p = self.config.top_p,
-        )
-
-        # Extract token usage from response
-        input_tokens = response.usage.prompt_tokens
-        output_tokens = response.usage.completion_tokens
-        
-        # Track token usage and calculate cost
-        usage_record = self.usage_tracker.add_usage(
-            self.config.model,
-            input_tokens,
-            output_tokens
-        )
-        
-        ret = response.choices[0].message.content
-        print(ret)
-        
-        # You can optionally print token usage information
-        print(f"Token usage: {input_tokens} input + {output_tokens} output = {input_tokens + output_tokens} total")
-        print(f"Cost: ${usage_record['total_cost']:.6f} (${usage_record['input_cost']:.6f} for input, ${usage_record['output_cost']:.6f} for output)")
-        
-        return ret
+            input_tokens = response.usage.prompt_tokens
+            output_tokens = response.usage.completion_tokens
+            usage_record = self.usage_tracker.add_usage(
+                self.config.model,
+                input_tokens,
+                output_tokens
+            )
+            ret = response.choices[0].message.content
+            return ret
+        else:  # gemini
+            # Synchronous Gemini client; run in thread to avoid blocking
+            import asyncio
+            loop = asyncio.get_running_loop()
+            def _gen_call():
+                model = genai.GenerativeModel(self.config.model)
+                resp = model.generate_content(prompt)
+                return resp.text if hasattr(resp, "text") else str(resp)
+            ret = await loop.run_in_executor(None, _gen_call)
+            # Token usage tracking for Gemini not available; record zeros
+            self.usage_tracker.add_usage(self.config.model, 0, 0)
+            return ret
     
     async def call_with_format(self, prompt: str, formatter: BaseFormatter):
         """

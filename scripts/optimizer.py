@@ -5,6 +5,8 @@
 
 import asyncio
 import time
+import os
+import re
 from typing import List, Literal, Dict
 
 from pydantic import BaseModel, Field
@@ -74,7 +76,21 @@ class Optimizer:
             for i in range(test_n):
                 loop = asyncio.new_event_loop()
                 asyncio.set_event_loop(loop)
-                score = loop.run_until_complete(self.test())
+                try:
+                    score = loop.run_until_complete(self.test())
+                except KeyboardInterrupt:
+                    logger.info("Interrupted during Test run. Exiting gracefully.")
+                    break
+                finally:
+                    try:
+                        if not loop.is_closed():
+                            loop.run_until_complete(asyncio.sleep(0))
+                    except Exception:
+                        pass
+                    try:
+                        loop.close()
+                    except Exception:
+                        pass
             return None
 
         for opt_round in range(self.max_rounds):
@@ -115,7 +131,18 @@ class Optimizer:
                 self.convergence_utils.print_results()
                 break
 
-            time.sleep(5)
+            time.sleep(10)
+
+            # Graceful loop cleanup at end of each optimization round
+            try:
+                if not loop.is_closed():
+                    loop.run_until_complete(asyncio.sleep(0))
+            except Exception:
+                pass
+            try:
+                loop.close()
+            except Exception:
+                pass
 
     async def _optimize_graph(self):
         validation_n = self.validation_rounds  # validation datasets's execution number
@@ -236,7 +263,6 @@ class Optimizer:
             return None
 
     async def test(self):
-        rounds = [1]  # You can choose the rounds you want to test here.
         data = []
 
         graph_path = f"{self.root_path}/workflows_test"
@@ -244,9 +270,44 @@ class Optimizer:
 
         data = self.data_utils.load_results(graph_path)
 
-        for round in rounds:
-            directory = self.graph_utils.create_round_directory(graph_path, round)
-            self.graph = self.graph_utils.load_graph(round, graph_path)
+        # Discover available test rounds dynamically (e.g., round_1, round_2, ... with graph.py)
+        try:
+            round_dirs = [d for d in os.listdir(graph_path) if re.match(r"round_\d+$", d)]
+            discovered_rounds = []
+            for d in round_dirs:
+                try:
+                    idx = int(d.split("_")[1])
+                except Exception:
+                    continue
+                graph_file = os.path.join(graph_path, d, "graph.py")
+                if os.path.isfile(graph_file):
+                    discovered_rounds.append(idx)
+            discovered_rounds.sort()
+        except Exception:
+            discovered_rounds = []
+
+        if not discovered_rounds:
+            # Fallback to round_1 if present; otherwise, inform the user
+            fallback_graph = os.path.join(graph_path, "round_1", "graph.py")
+            if os.path.isfile(fallback_graph):
+                discovered_rounds = [1]
+            else:
+                logger.error(
+                    f"No valid test rounds found under {graph_path}. "
+                    "Please create at least round_1 with a valid graph.py, or sync a round from workflows/."
+                )
+                return None
+
+        for round in discovered_rounds:
+            # Do not create directories if they already exist; just reuse
+            directory = os.path.join(graph_path, f"round_{round}")
+            os.makedirs(directory, exist_ok=True)
+
+            try:
+                self.graph = self.graph_utils.load_graph(round, graph_path)
+            except Exception as e:
+                logger.error(f"Skipping round {round} due to graph load error: {e}")
+                continue
 
             score, avg_cost, total_cost = await self.evaluation_utils.evaluate_graph_test(self, directory, is_test=True)
 
