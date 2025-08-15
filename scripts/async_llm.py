@@ -9,6 +9,7 @@ try:
 except Exception:
     genai = None
 from scripts.formatter import BaseFormatter, FormatError
+from scripts.logs import logger
 
 import yaml
 from pathlib import Path
@@ -98,12 +99,12 @@ class ModelPricing:
     """Pricing information for different models in USD per 1K tokens"""
     PRICES = {
         # GPT-4o models
-        "gpt-4o": {"input": 0.0025, "output": 0.01},
+        # Official (2024-05): $5/M input, $15/M output => $0.005/$0.015 per 1K
+        "gpt-4o": {"input": 0.005, "output": 0.015},
         "gpt-4o-mini": {"input": 0.00015, "output": 0.0006},
         "gpt-4o-mini-2024-07-18": {"input": 0.00015, "output": 0.0006},
-        "claude-3-5-sonnet": {"input": 0.003, "output": 0.015},
-        "o3":{"input":0.003, "output":0.015},
-        "o3-mini": {"input": 0.0011, "output": 0.0025},
+        # Gemini pricing (approx; Gemini Flash 2.0 may differ; usage tracking is recorded as 0 today)
+        "gemini-2.0-flash": {"input": 0.0001, "output": 0.0004},
     }
     
     @classmethod
@@ -153,6 +154,21 @@ class TokenUsageTracker:
         self.total_output_tokens += output_tokens
         self.total_cost += total_cost
         self.usage_history.append(usage_record)
+
+        # Log per-call token and cost details and cumulative spend
+        try:
+            logger.info(
+                "LLM usage | model=%s | prompt_tokens=%d, completion_tokens=%d | prices($/1K): in=%.5f out=%.5f | call_cost=$%.5f | total_cost=$%.5f",
+                model,
+                input_tokens,
+                output_tokens,
+                ModelPricing.get_price(model, "input"),
+                ModelPricing.get_price(model, "output"),
+                total_cost,
+                self.total_cost,
+            )
+        except Exception:
+            pass
         
         return usage_record
     
