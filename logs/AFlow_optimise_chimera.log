@@ -1,0 +1,726 @@
+2025-08-10 10:36:21 - INFO - Skipping datasets as data/datasets already exists.
+2025-08-10 10:36:31 - INFO - Results saved to workspace/Combined/workflows/round_1/0.77000_20250810_103631.csv
+2025-08-10 10:36:31 - INFO - Combined benchmark results:
+2025-08-10 10:36:31 - INFO -   math: Score=0.50000, Cost=3.03928, Samples=34
+2025-08-10 10:36:31 - INFO -   humaneval: Score=0.93939, Cost=4.57283, Samples=33
+2025-08-10 10:36:31 - INFO -   mmlu: Score=0.87879, Cost=0.74494, Samples=33
+2025-08-10 10:36:31 - INFO - Overall average score: 0.77000
+2025-08-10 10:36:44 - INFO - Results saved to workspace/Combined/workflows/round_1/0.79000_20250810_103644.csv
+2025-08-10 10:36:44 - INFO - Combined benchmark results:
+2025-08-10 10:36:44 - INFO -   math: Score=0.50000, Cost=2.73880, Samples=34
+2025-08-10 10:36:44 - INFO -   humaneval: Score=0.93939, Cost=5.12433, Samples=33
+2025-08-10 10:36:44 - INFO -   mmlu: Score=0.93939, Cost=0.84699, Samples=33
+2025-08-10 10:36:44 - INFO - Overall average score: 0.79000
+2025-08-10 10:36:57 - INFO - Results saved to workspace/Combined/workflows/round_1/0.78000_20250810_103657.csv
+2025-08-10 10:36:57 - INFO - Combined benchmark results:
+2025-08-10 10:36:57 - INFO -   math: Score=0.47059, Cost=2.66553, Samples=34
+2025-08-10 10:36:57 - INFO -   humaneval: Score=0.96970, Cost=5.16864, Samples=33
+2025-08-10 10:36:57 - INFO -   mmlu: Score=0.90909, Cost=0.88808, Samples=33
+2025-08-10 10:36:57 - INFO - Overall average score: 0.78000
+2025-08-10 10:37:08 - INFO - Results saved to workspace/Combined/workflows/round_1/0.76000_20250810_103708.csv
+2025-08-10 10:37:08 - INFO - Combined benchmark results:
+2025-08-10 10:37:08 - INFO -   math: Score=0.41176, Cost=2.87890, Samples=34
+2025-08-10 10:37:08 - INFO -   humaneval: Score=0.93939, Cost=4.79054, Samples=33
+2025-08-10 10:37:08 - INFO -   mmlu: Score=0.93939, Cost=0.83774, Samples=33
+2025-08-10 10:37:08 - INFO - Overall average score: 0.76000
+2025-08-10 10:37:22 - INFO - Results saved to workspace/Combined/workflows/round_1/0.77000_20250810_103722.csv
+2025-08-10 10:37:22 - INFO - Combined benchmark results:
+2025-08-10 10:37:22 - INFO -   math: Score=0.47059, Cost=2.76313, Samples=34
+2025-08-10 10:37:22 - INFO -   humaneval: Score=0.93939, Cost=4.93322, Samples=33
+2025-08-10 10:37:22 - INFO -   mmlu: Score=0.90909, Cost=0.61355, Samples=33
+2025-08-10 10:37:22 - INFO - Overall average score: 0.77000
+2025-08-10 10:37:22 - INFO - 
+Mixed probability distribution: [1.]
+2025-08-10 10:37:22 - INFO - 
+Sorted rounds: [{'round': 1, 'score': 0.774}]
+2025-08-10 10:37:22 - INFO - 
+Selected index: 0, Selected item: {'round': 1, 'score': 0.774}
+2025-08-10 10:37:22 - INFO - Processed experience data saved to workspace/Combined/workflows/processed_experience.json
+2025-08-10 10:37:22 - INFO - workspace/Combined/workflows/round_1/log.json
+2025-08-10 10:37:27 - INFO - Graph optimization response received successfully
+2025-08-10 10:37:27 - INFO - workspace/Combined/workflows/round_2
+2025-08-10 10:37:45 - INFO - Results saved to workspace/Combined/workflows/round_2/0.76000_20250810_103745.csv
+2025-08-10 10:37:45 - INFO - Combined benchmark results:
+2025-08-10 10:37:45 - INFO -   math: Score=0.41176, Cost=11.64063, Samples=34
+2025-08-10 10:37:45 - INFO -   humaneval: Score=0.96970, Cost=6.52301, Samples=33
+2025-08-10 10:37:45 - INFO -   mmlu: Score=0.90909, Cost=6.77144, Samples=33
+2025-08-10 10:37:45 - INFO - Overall average score: 0.76000
+2025-08-10 10:38:02 - INFO - Results saved to workspace/Combined/workflows/round_2/0.77000_20250810_103802.csv
+2025-08-10 10:38:02 - INFO - Combined benchmark results:
+2025-08-10 10:38:02 - INFO -   math: Score=0.50000, Cost=11.15804, Samples=34
+2025-08-10 10:38:02 - INFO -   humaneval: Score=0.93939, Cost=7.74074, Samples=33
+2025-08-10 10:38:02 - INFO -   mmlu: Score=0.87879, Cost=6.62010, Samples=33
+2025-08-10 10:38:02 - INFO - Overall average score: 0.77000
+2025-08-10 10:38:25 - INFO - Results saved to workspace/Combined/workflows/round_2/0.79000_20250810_103825.csv
+2025-08-10 10:38:25 - INFO - Combined benchmark results:
+2025-08-10 10:38:25 - INFO -   math: Score=0.50000, Cost=10.62356, Samples=34
+2025-08-10 10:38:25 - INFO -   humaneval: Score=0.93939, Cost=8.69939, Samples=33
+2025-08-10 10:38:25 - INFO -   mmlu: Score=0.93939, Cost=7.05751, Samples=33
+2025-08-10 10:38:25 - INFO - Overall average score: 0.79000
+2025-08-10 10:38:42 - INFO - Results saved to workspace/Combined/workflows/round_2/0.81000_20250810_103842.csv
+2025-08-10 10:38:42 - INFO - Combined benchmark results:
+2025-08-10 10:38:42 - INFO -   math: Score=0.55882, Cost=11.60816, Samples=34
+2025-08-10 10:38:42 - INFO -   humaneval: Score=0.93939, Cost=7.27998, Samples=33
+2025-08-10 10:38:42 - INFO -   mmlu: Score=0.93939, Cost=6.52026, Samples=33
+2025-08-10 10:38:42 - INFO - Overall average score: 0.81000
+2025-08-10 10:39:02 - INFO - Results saved to workspace/Combined/workflows/round_2/0.78000_20250810_103902.csv
+2025-08-10 10:39:02 - INFO - Combined benchmark results:
+2025-08-10 10:39:02 - INFO -   math: Score=0.47059, Cost=12.36642, Samples=34
+2025-08-10 10:39:02 - INFO -   humaneval: Score=0.93939, Cost=7.71308, Samples=33
+2025-08-10 10:39:02 - INFO -   mmlu: Score=0.93939, Cost=5.29722, Samples=33
+2025-08-10 10:39:02 - INFO - Overall average score: 0.78000
+2025-08-10 10:39:02 - INFO - Score for round 2: 0.782
+2025-08-10 10:39:12 - INFO - 
+Mixed probability distribution: [0.52794042 0.47205958]
+2025-08-10 10:39:12 - INFO - 
+Sorted rounds: [{'round': 2, 'score': 0.782}, {'round': 1, 'score': 0.774}]
+2025-08-10 10:39:12 - INFO - 
+Selected index: 0, Selected item: {'round': 2, 'score': 0.782}
+2025-08-10 10:39:12 - INFO - Processed experience data saved to workspace/Combined/workflows/processed_experience.json
+2025-08-10 10:39:12 - INFO - workspace/Combined/workflows/round_2/log.json
+2025-08-10 10:39:18 - INFO - Graph optimization response received successfully
+2025-08-10 10:39:18 - INFO - workspace/Combined/workflows/round_3
+2025-08-10 10:39:50 - INFO - Results saved to workspace/Combined/workflows/round_3/0.39000_20250810_103950.csv
+2025-08-10 10:39:50 - INFO - Combined benchmark results:
+2025-08-10 10:39:50 - INFO -   math: Score=0.00000, Cost=19.88329, Samples=34
+2025-08-10 10:39:50 - INFO -   humaneval: Score=0.93939, Cost=9.92303, Samples=33
+2025-08-10 10:39:50 - INFO -   mmlu: Score=0.24242, Cost=13.47175, Samples=33
+2025-08-10 10:39:50 - INFO - Overall average score: 0.39000
+2025-08-10 10:40:22 - INFO - Results saved to workspace/Combined/workflows/round_3/0.39000_20250810_104022.csv
+2025-08-10 10:40:22 - INFO - Combined benchmark results:
+2025-08-10 10:40:22 - INFO -   math: Score=0.00000, Cost=20.77297, Samples=34
+2025-08-10 10:40:22 - INFO -   humaneval: Score=0.93939, Cost=9.88561, Samples=33
+2025-08-10 10:40:22 - INFO -   mmlu: Score=0.24242, Cost=12.53423, Samples=33
+2025-08-10 10:40:22 - INFO - Overall average score: 0.39000
+2025-08-10 10:40:51 - INFO - Results saved to workspace/Combined/workflows/round_3/0.39000_20250810_104051.csv
+2025-08-10 10:40:51 - INFO - Combined benchmark results:
+2025-08-10 10:40:51 - INFO -   math: Score=0.00000, Cost=20.50180, Samples=34
+2025-08-10 10:40:51 - INFO -   humaneval: Score=0.93939, Cost=9.88440, Samples=33
+2025-08-10 10:40:51 - INFO -   mmlu: Score=0.24242, Cost=13.34068, Samples=33
+2025-08-10 10:40:51 - INFO - Overall average score: 0.39000
+2025-08-10 10:41:24 - INFO - Results saved to workspace/Combined/workflows/round_3/0.39000_20250810_104124.csv
+2025-08-10 10:41:24 - INFO - Combined benchmark results:
+2025-08-10 10:41:24 - INFO -   math: Score=0.00000, Cost=20.69639, Samples=34
+2025-08-10 10:41:24 - INFO -   humaneval: Score=0.93939, Cost=9.71182, Samples=33
+2025-08-10 10:41:24 - INFO -   mmlu: Score=0.24242, Cost=14.31181, Samples=33
+2025-08-10 10:41:24 - INFO - Overall average score: 0.39000
+2025-08-10 10:41:57 - INFO - Results saved to workspace/Combined/workflows/round_3/0.39000_20250810_104157.csv
+2025-08-10 10:41:57 - INFO - Combined benchmark results:
+2025-08-10 10:41:57 - INFO -   math: Score=0.00000, Cost=19.61299, Samples=34
+2025-08-10 10:41:57 - INFO -   humaneval: Score=0.93939, Cost=8.62912, Samples=33
+2025-08-10 10:41:57 - INFO -   mmlu: Score=0.24242, Cost=15.73332, Samples=33
+2025-08-10 10:41:57 - INFO - Overall average score: 0.39000
+2025-08-10 10:41:57 - INFO - Score for round 3: 0.39
+2025-08-10 10:42:07 - INFO - 
+Mixed probability distribution: [0.47786011 0.42199114 0.10014875]
+2025-08-10 10:42:07 - INFO - 
+Sorted rounds: [{'round': 2, 'score': 0.782}, {'round': 1, 'score': 0.774}, {'round': 3, 'score': 0.39}]
+2025-08-10 10:42:07 - INFO - 
+Selected index: 0, Selected item: {'round': 2, 'score': 0.782}
+2025-08-10 10:42:07 - INFO - Processed experience data saved to workspace/Combined/workflows/processed_experience.json
+2025-08-10 10:42:07 - INFO - workspace/Combined/workflows/round_2/log.json
+2025-08-10 10:42:11 - INFO - Graph optimization response received successfully
+2025-08-10 10:42:11 - INFO - 
+Mixed probability distribution: [0.47786011 0.42199114 0.10014875]
+2025-08-10 10:42:11 - INFO - 
+Sorted rounds: [{'round': 2, 'score': 0.782}, {'round': 1, 'score': 0.774}, {'round': 3, 'score': 0.39}]
+2025-08-10 10:42:11 - INFO - 
+Selected index: 0, Selected item: {'round': 2, 'score': 0.782}
+2025-08-10 10:42:11 - INFO - Processed experience data saved to workspace/Combined/workflows/processed_experience.json
+2025-08-10 10:42:11 - INFO - workspace/Combined/workflows/round_2/log.json
+2025-08-10 10:42:17 - INFO - Graph optimization response received successfully
+2025-08-10 10:42:17 - INFO - 
+Mixed probability distribution: [0.47786011 0.42199114 0.10014875]
+2025-08-10 10:42:17 - INFO - 
+Sorted rounds: [{'round': 2, 'score': 0.782}, {'round': 1, 'score': 0.774}, {'round': 3, 'score': 0.39}]
+2025-08-10 10:42:17 - INFO - 
+Selected index: 0, Selected item: {'round': 2, 'score': 0.782}
+2025-08-10 10:42:17 - INFO - Processed experience data saved to workspace/Combined/workflows/processed_experience.json
+2025-08-10 10:42:17 - INFO - workspace/Combined/workflows/round_2/log.json
+2025-08-10 10:42:22 - INFO - Graph optimization response received successfully
+2025-08-10 10:42:22 - INFO - 
+Mixed probability distribution: [0.47786011 0.42199114 0.10014875]
+2025-08-10 10:42:22 - INFO - 
+Sorted rounds: [{'round': 2, 'score': 0.782}, {'round': 1, 'score': 0.774}, {'round': 3, 'score': 0.39}]
+2025-08-10 10:42:22 - INFO - 
+Selected index: 0, Selected item: {'round': 2, 'score': 0.782}
+2025-08-10 10:42:22 - INFO - Processed experience data saved to workspace/Combined/workflows/processed_experience.json
+2025-08-10 10:42:22 - INFO - workspace/Combined/workflows/round_2/log.json
+2025-08-10 10:42:27 - INFO - Graph optimization response received successfully
+2025-08-10 10:42:27 - INFO - 
+Mixed probability distribution: [0.47786011 0.42199114 0.10014875]
+2025-08-10 10:42:27 - INFO - 
+Sorted rounds: [{'round': 2, 'score': 0.782}, {'round': 1, 'score': 0.774}, {'round': 3, 'score': 0.39}]
+2025-08-10 10:42:27 - INFO - 
+Selected index: 1, Selected item: {'round': 1, 'score': 0.774}
+2025-08-10 10:42:27 - INFO - Processed experience data saved to workspace/Combined/workflows/processed_experience.json
+2025-08-10 10:42:27 - INFO - workspace/Combined/workflows/round_1/log.json
+2025-08-10 10:42:32 - INFO - Graph optimization response received successfully
+2025-08-10 10:42:32 - INFO - workspace/Combined/workflows/round_4
+2025-08-10 10:42:49 - INFO - Maximum retries reached. Skipping this sample. Error: 'coroutine' object has no attribute 'get'
+2025-08-10 10:42:51 - INFO - Maximum retries reached. Skipping this sample. Error: 'coroutine' object has no attribute 'get'
+2025-08-10 10:42:54 - INFO - Maximum retries reached. Skipping this sample. Error: 'coroutine' object has no attribute 'get'
+2025-08-10 10:42:54 - INFO - Maximum retries reached. Skipping this sample. Error: 'coroutine' object has no attribute 'get'
+2025-08-10 10:42:56 - INFO - Maximum retries reached. Skipping this sample. Error: 'coroutine' object has no attribute 'get'
+2025-08-10 10:42:58 - INFO - Maximum retries reached. Skipping this sample. Error: 'coroutine' object has no attribute 'get'
+2025-08-10 10:42:59 - INFO - Maximum retries reached. Skipping this sample. Error: 'coroutine' object has no attribute 'get'
+2025-08-10 10:43:01 - INFO - Maximum retries reached. Skipping this sample. Error: 'coroutine' object has no attribute 'get'
+2025-08-10 10:43:01 - INFO - Maximum retries reached. Skipping this sample. Error: 'coroutine' object has no attribute 'get'
+2025-08-10 10:43:01 - INFO - Maximum retries reached. Skipping this sample. Error: 'coroutine' object has no attribute 'get'
+2025-08-10 10:43:02 - INFO - Maximum retries reached. Skipping this sample. Error: 'coroutine' object has no attribute 'get'
+2025-08-10 10:43:04 - INFO - Maximum retries reached. Skipping this sample. Error: 'coroutine' object has no attribute 'get'
+2025-08-10 10:43:04 - INFO - Maximum retries reached. Skipping this sample. Error: 'coroutine' object has no attribute 'get'
+2025-08-10 10:43:04 - INFO - Maximum retries reached. Skipping this sample. Error: 'coroutine' object has no attribute 'get'
+2025-08-10 10:43:04 - INFO - Maximum retries reached. Skipping this sample. Error: 'coroutine' object has no attribute 'get'
+2025-08-10 10:43:05 - INFO - Maximum retries reached. Skipping this sample. Error: 'coroutine' object has no attribute 'get'
+2025-08-10 10:43:05 - INFO - Maximum retries reached. Skipping this sample. Error: 'coroutine' object has no attribute 'get'
+2025-08-10 10:43:05 - INFO - Maximum retries reached. Skipping this sample. Error: 'coroutine' object has no attribute 'get'
+2025-08-10 10:43:06 - INFO - Maximum retries reached. Skipping this sample. Error: 'coroutine' object has no attribute 'get'
+2025-08-10 10:43:07 - INFO - Maximum retries reached. Skipping this sample. Error: 'coroutine' object has no attribute 'get'
+2025-08-10 10:43:08 - INFO - Maximum retries reached. Skipping this sample. Error: 'coroutine' object has no attribute 'get'
+2025-08-10 10:43:08 - INFO - Maximum retries reached. Skipping this sample. Error: 'coroutine' object has no attribute 'get'
+2025-08-10 10:43:08 - INFO - Maximum retries reached. Skipping this sample. Error: 'coroutine' object has no attribute 'get'
+2025-08-10 10:43:08 - INFO - Maximum retries reached. Skipping this sample. Error: 'coroutine' object has no attribute 'get'
+2025-08-10 10:43:08 - INFO - Maximum retries reached. Skipping this sample. Error: 'coroutine' object has no attribute 'get'
+2025-08-10 10:43:10 - INFO - Maximum retries reached. Skipping this sample. Error: 'coroutine' object has no attribute 'get'
+2025-08-10 10:43:13 - INFO - Maximum retries reached. Skipping this sample. Error: 'coroutine' object has no attribute 'get'
+2025-08-10 10:43:14 - INFO - Maximum retries reached. Skipping this sample. Error: 'coroutine' object has no attribute 'get'
+2025-08-10 10:43:14 - INFO - Maximum retries reached. Skipping this sample. Error: 'coroutine' object has no attribute 'get'
+2025-08-10 10:43:14 - INFO - Maximum retries reached. Skipping this sample. Error: 'coroutine' object has no attribute 'get'
+2025-08-10 10:43:15 - INFO - Maximum retries reached. Skipping this sample. Error: 'coroutine' object has no attribute 'get'
+2025-08-10 10:43:19 - INFO - Maximum retries reached. Skipping this sample. Error: 'coroutine' object has no attribute 'get'
+2025-08-10 10:43:21 - INFO - Maximum retries reached. Skipping this sample. Error: 'coroutine' object has no attribute 'get'
+2025-08-10 10:43:21 - INFO - Results saved to workspace/Combined/workflows/round_4/0.46000_20250810_104321.csv
+2025-08-10 10:43:21 - INFO - Combined benchmark results:
+2025-08-10 10:43:21 - INFO -   math: Score=0.44118, Cost=3.79262, Samples=34
+2025-08-10 10:43:21 - INFO -   humaneval: Score=0.00000, Cost=0.00000, Samples=33
+2025-08-10 10:43:21 - INFO -   mmlu: Score=0.93939, Cost=0.47143, Samples=33
+2025-08-10 10:43:21 - INFO - Overall average score: 0.46000
+2025-08-10 10:43:35 - INFO - Maximum retries reached. Skipping this sample. Error: 'coroutine' object has no attribute 'get'
+2025-08-10 10:43:39 - INFO - Maximum retries reached. Skipping this sample. Error: 'coroutine' object has no attribute 'get'
+2025-08-10 10:43:41 - INFO - Maximum retries reached. Skipping this sample. Error: 'coroutine' object has no attribute 'get'
+2025-08-10 10:43:42 - INFO - Maximum retries reached. Skipping this sample. Error: 'coroutine' object has no attribute 'get'
+2025-08-10 10:43:45 - INFO - Maximum retries reached. Skipping this sample. Error: 'coroutine' object has no attribute 'get'
+2025-08-10 10:43:46 - INFO - Maximum retries reached. Skipping this sample. Error: 'coroutine' object has no attribute 'get'
+2025-08-10 10:43:46 - INFO - Maximum retries reached. Skipping this sample. Error: 'coroutine' object has no attribute 'get'
+2025-08-10 10:43:47 - INFO - Maximum retries reached. Skipping this sample. Error: 'coroutine' object has no attribute 'get'
+2025-08-10 10:43:47 - INFO - Maximum retries reached. Skipping this sample. Error: 'coroutine' object has no attribute 'get'
+2025-08-10 10:43:48 - INFO - Maximum retries reached. Skipping this sample. Error: 'coroutine' object has no attribute 'get'
+2025-08-10 10:43:48 - INFO - Maximum retries reached. Skipping this sample. Error: 'coroutine' object has no attribute 'get'
+2025-08-10 10:43:49 - INFO - Maximum retries reached. Skipping this sample. Error: 'coroutine' object has no attribute 'get'
+2025-08-10 10:43:49 - INFO - Maximum retries reached. Skipping this sample. Error: 'coroutine' object has no attribute 'get'
+2025-08-10 10:43:49 - INFO - Maximum retries reached. Skipping this sample. Error: 'coroutine' object has no attribute 'get'
+2025-08-10 10:43:51 - INFO - Maximum retries reached. Skipping this sample. Error: 'coroutine' object has no attribute 'get'
+2025-08-10 10:43:51 - INFO - Maximum retries reached. Skipping this sample. Error: 'coroutine' object has no attribute 'get'
+2025-08-10 10:43:51 - INFO - Maximum retries reached. Skipping this sample. Error: 'coroutine' object has no attribute 'get'
+2025-08-10 10:43:51 - INFO - Maximum retries reached. Skipping this sample. Error: 'coroutine' object has no attribute 'get'
+2025-08-10 10:43:52 - INFO - Maximum retries reached. Skipping this sample. Error: 'coroutine' object has no attribute 'get'
+2025-08-10 10:43:52 - INFO - Maximum retries reached. Skipping this sample. Error: 'coroutine' object has no attribute 'get'
+2025-08-10 10:43:53 - INFO - Maximum retries reached. Skipping this sample. Error: 'coroutine' object has no attribute 'get'
+2025-08-10 10:43:54 - INFO - Maximum retries reached. Skipping this sample. Error: 'coroutine' object has no attribute 'get'
+2025-08-10 10:43:54 - INFO - Maximum retries reached. Skipping this sample. Error: 'coroutine' object has no attribute 'get'
+2025-08-10 10:43:54 - INFO - Maximum retries reached. Skipping this sample. Error: 'coroutine' object has no attribute 'get'
+2025-08-10 10:43:55 - INFO - Maximum retries reached. Skipping this sample. Error: 'coroutine' object has no attribute 'get'
+2025-08-10 10:43:55 - INFO - Maximum retries reached. Skipping this sample. Error: 'coroutine' object has no attribute 'get'
+2025-08-10 10:43:56 - INFO - Maximum retries reached. Skipping this sample. Error: 'coroutine' object has no attribute 'get'
+2025-08-10 10:43:56 - INFO - Maximum retries reached. Skipping this sample. Error: 'coroutine' object has no attribute 'get'
+2025-08-10 10:43:58 - INFO - Maximum retries reached. Skipping this sample. Error: 'coroutine' object has no attribute 'get'
+2025-08-10 10:43:58 - INFO - Maximum retries reached. Skipping this sample. Error: 'coroutine' object has no attribute 'get'
+2025-08-10 10:43:59 - INFO - Maximum retries reached. Skipping this sample. Error: 'coroutine' object has no attribute 'get'
+2025-08-10 10:44:00 - INFO - Maximum retries reached. Skipping this sample. Error: 'coroutine' object has no attribute 'get'
+2025-08-10 10:44:00 - INFO - Maximum retries reached. Skipping this sample. Error: 'coroutine' object has no attribute 'get'
+2025-08-10 10:44:00 - INFO - Results saved to workspace/Combined/workflows/round_4/0.49000_20250810_104400.csv
+2025-08-10 10:44:00 - INFO - Combined benchmark results:
+2025-08-10 10:44:00 - INFO -   math: Score=0.55882, Cost=3.49753, Samples=34
+2025-08-10 10:44:00 - INFO -   humaneval: Score=0.00000, Cost=0.00000, Samples=33
+2025-08-10 10:44:00 - INFO -   mmlu: Score=0.90909, Cost=0.31317, Samples=33
+2025-08-10 10:44:00 - INFO - Overall average score: 0.49000
+2025-08-10 10:44:15 - INFO - Maximum retries reached. Skipping this sample. Error: 'coroutine' object has no attribute 'get'
+2025-08-10 10:44:15 - INFO - Maximum retries reached. Skipping this sample. Error: 'coroutine' object has no attribute 'get'
+2025-08-10 10:44:22 - INFO - Maximum retries reached. Skipping this sample. Error: 'coroutine' object has no attribute 'get'
+2025-08-10 10:44:22 - INFO - Maximum retries reached. Skipping this sample. Error: 'coroutine' object has no attribute 'get'
+2025-08-10 10:44:23 - INFO - Maximum retries reached. Skipping this sample. Error: 'coroutine' object has no attribute 'get'
+2025-08-10 10:44:24 - INFO - Maximum retries reached. Skipping this sample. Error: 'coroutine' object has no attribute 'get'
+2025-08-10 10:44:25 - INFO - Maximum retries reached. Skipping this sample. Error: 'coroutine' object has no attribute 'get'
+2025-08-10 10:44:25 - INFO - Maximum retries reached. Skipping this sample. Error: 'coroutine' object has no attribute 'get'
+2025-08-10 10:44:26 - INFO - Maximum retries reached. Skipping this sample. Error: 'coroutine' object has no attribute 'get'
+2025-08-10 10:44:26 - INFO - Maximum retries reached. Skipping this sample. Error: 'coroutine' object has no attribute 'get'
+2025-08-10 10:44:27 - INFO - Maximum retries reached. Skipping this sample. Error: 'coroutine' object has no attribute 'get'
+2025-08-10 10:44:28 - INFO - Maximum retries reached. Skipping this sample. Error: 'coroutine' object has no attribute 'get'
+2025-08-10 10:44:28 - INFO - Maximum retries reached. Skipping this sample. Error: 'coroutine' object has no attribute 'get'
+2025-08-10 10:44:29 - INFO - Maximum retries reached. Skipping this sample. Error: 'coroutine' object has no attribute 'get'
+2025-08-10 10:44:30 - INFO - Maximum retries reached. Skipping this sample. Error: 'coroutine' object has no attribute 'get'
+2025-08-10 10:44:30 - INFO - Maximum retries reached. Skipping this sample. Error: 'coroutine' object has no attribute 'get'
+2025-08-10 10:44:30 - INFO - Maximum retries reached. Skipping this sample. Error: 'coroutine' object has no attribute 'get'
+2025-08-10 10:44:30 - INFO - Maximum retries reached. Skipping this sample. Error: 'coroutine' object has no attribute 'get'
+2025-08-10 10:44:30 - INFO - Maximum retries reached. Skipping this sample. Error: 'coroutine' object has no attribute 'get'
+2025-08-10 10:44:31 - INFO - Maximum retries reached. Skipping this sample. Error: 'coroutine' object has no attribute 'get'
+2025-08-10 10:44:31 - INFO - Maximum retries reached. Skipping this sample. Error: 'coroutine' object has no attribute 'get'
+2025-08-10 10:44:31 - INFO - Maximum retries reached. Skipping this sample. Error: 'coroutine' object has no attribute 'get'
+2025-08-10 10:44:31 - INFO - Maximum retries reached. Skipping this sample. Error: 'coroutine' object has no attribute 'get'
+2025-08-10 10:44:32 - INFO - Maximum retries reached. Skipping this sample. Error: 'coroutine' object has no attribute 'get'
+2025-08-10 10:44:32 - INFO - Maximum retries reached. Skipping this sample. Error: 'coroutine' object has no attribute 'get'
+2025-08-10 10:44:32 - INFO - Maximum retries reached. Skipping this sample. Error: 'coroutine' object has no attribute 'get'
+2025-08-10 10:44:32 - INFO - Maximum retries reached. Skipping this sample. Error: 'coroutine' object has no attribute 'get'
+2025-08-10 10:44:35 - INFO - Maximum retries reached. Skipping this sample. Error: 'coroutine' object has no attribute 'get'
+2025-08-10 10:44:35 - INFO - Maximum retries reached. Skipping this sample. Error: 'coroutine' object has no attribute 'get'
+2025-08-10 10:44:37 - INFO - Maximum retries reached. Skipping this sample. Error: 'coroutine' object has no attribute 'get'
+2025-08-10 10:44:37 - INFO - Maximum retries reached. Skipping this sample. Error: 'coroutine' object has no attribute 'get'
+2025-08-10 10:44:40 - INFO - Maximum retries reached. Skipping this sample. Error: 'coroutine' object has no attribute 'get'
+2025-08-10 10:44:43 - INFO - Maximum retries reached. Skipping this sample. Error: 'coroutine' object has no attribute 'get'
+2025-08-10 10:44:43 - INFO - Results saved to workspace/Combined/workflows/round_4/0.48000_20250810_104443.csv
+2025-08-10 10:44:43 - INFO - Combined benchmark results:
+2025-08-10 10:44:43 - INFO -   math: Score=0.52941, Cost=3.08751, Samples=34
+2025-08-10 10:44:43 - INFO -   humaneval: Score=0.00000, Cost=0.00000, Samples=33
+2025-08-10 10:44:43 - INFO -   mmlu: Score=0.90909, Cost=1.17878, Samples=33
+2025-08-10 10:44:43 - INFO - Overall average score: 0.48000
+2025-08-10 10:44:58 - INFO - Maximum retries reached. Skipping this sample. Error: 'coroutine' object has no attribute 'get'
+2025-08-10 10:45:00 - INFO - Maximum retries reached. Skipping this sample. Error: 'coroutine' object has no attribute 'get'
+2025-08-10 10:45:05 - INFO - Maximum retries reached. Skipping this sample. Error: 'coroutine' object has no attribute 'get'
+2025-08-10 10:45:06 - INFO - Maximum retries reached. Skipping this sample. Error: 'coroutine' object has no attribute 'get'
+2025-08-10 10:45:06 - INFO - Maximum retries reached. Skipping this sample. Error: 'coroutine' object has no attribute 'get'
+2025-08-10 10:45:07 - INFO - Maximum retries reached. Skipping this sample. Error: 'coroutine' object has no attribute 'get'
+2025-08-10 10:45:07 - INFO - Maximum retries reached. Skipping this sample. Error: 'coroutine' object has no attribute 'get'
+2025-08-10 10:45:08 - INFO - Maximum retries reached. Skipping this sample. Error: 'coroutine' object has no attribute 'get'
+2025-08-10 10:45:09 - INFO - Maximum retries reached. Skipping this sample. Error: 'coroutine' object has no attribute 'get'
+2025-08-10 10:45:09 - INFO - Maximum retries reached. Skipping this sample. Error: 'coroutine' object has no attribute 'get'
+2025-08-10 10:45:09 - INFO - Maximum retries reached. Skipping this sample. Error: 'coroutine' object has no attribute 'get'
+2025-08-10 10:45:09 - INFO - Maximum retries reached. Skipping this sample. Error: 'coroutine' object has no attribute 'get'
+2025-08-10 10:45:09 - INFO - Maximum retries reached. Skipping this sample. Error: 'coroutine' object has no attribute 'get'
+2025-08-10 10:45:11 - INFO - Maximum retries reached. Skipping this sample. Error: 'coroutine' object has no attribute 'get'
+2025-08-10 10:45:11 - INFO - Maximum retries reached. Skipping this sample. Error: 'coroutine' object has no attribute 'get'
+2025-08-10 10:45:12 - INFO - Maximum retries reached. Skipping this sample. Error: 'coroutine' object has no attribute 'get'
+2025-08-10 10:45:12 - INFO - Maximum retries reached. Skipping this sample. Error: 'coroutine' object has no attribute 'get'
+2025-08-10 10:45:12 - INFO - Maximum retries reached. Skipping this sample. Error: 'coroutine' object has no attribute 'get'
+2025-08-10 10:45:13 - INFO - Maximum retries reached. Skipping this sample. Error: 'coroutine' object has no attribute 'get'
+2025-08-10 10:45:13 - INFO - Maximum retries reached. Skipping this sample. Error: 'coroutine' object has no attribute 'get'
+2025-08-10 10:45:14 - INFO - Maximum retries reached. Skipping this sample. Error: 'coroutine' object has no attribute 'get'
+2025-08-10 10:45:14 - INFO - Maximum retries reached. Skipping this sample. Error: 'coroutine' object has no attribute 'get'
+2025-08-10 10:45:15 - INFO - Maximum retries reached. Skipping this sample. Error: 'coroutine' object has no attribute 'get'
+2025-08-10 10:45:15 - INFO - Maximum retries reached. Skipping this sample. Error: 'coroutine' object has no attribute 'get'
+2025-08-10 10:45:16 - INFO - Maximum retries reached. Skipping this sample. Error: 'coroutine' object has no attribute 'get'
+2025-08-10 10:45:16 - INFO - Maximum retries reached. Skipping this sample. Error: 'coroutine' object has no attribute 'get'
+2025-08-10 10:45:18 - INFO - Maximum retries reached. Skipping this sample. Error: 'coroutine' object has no attribute 'get'
+2025-08-10 10:45:18 - INFO - Maximum retries reached. Skipping this sample. Error: 'coroutine' object has no attribute 'get'
+2025-08-10 10:45:18 - INFO - Maximum retries reached. Skipping this sample. Error: 'coroutine' object has no attribute 'get'
+2025-08-10 10:45:19 - INFO - Maximum retries reached. Skipping this sample. Error: 'coroutine' object has no attribute 'get'
+2025-08-10 10:45:19 - INFO - Maximum retries reached. Skipping this sample. Error: 'coroutine' object has no attribute 'get'
+2025-08-10 10:45:22 - INFO - Maximum retries reached. Skipping this sample. Error: 'coroutine' object has no attribute 'get'
+2025-08-10 10:45:25 - INFO - Maximum retries reached. Skipping this sample. Error: 'coroutine' object has no attribute 'get'
+2025-08-10 10:45:25 - INFO - Results saved to workspace/Combined/workflows/round_4/0.45000_20250810_104525.csv
+2025-08-10 10:45:25 - INFO - Combined benchmark results:
+2025-08-10 10:45:25 - INFO -   math: Score=0.44118, Cost=3.47015, Samples=34
+2025-08-10 10:45:25 - INFO -   humaneval: Score=0.00000, Cost=0.00000, Samples=33
+2025-08-10 10:45:25 - INFO -   mmlu: Score=0.90909, Cost=0.80408, Samples=33
+2025-08-10 10:45:25 - INFO - Overall average score: 0.45000
+2025-08-10 10:45:40 - INFO - Maximum retries reached. Skipping this sample. Error: 'coroutine' object has no attribute 'get'
+2025-08-10 10:45:41 - INFO - Maximum retries reached. Skipping this sample. Error: 'coroutine' object has no attribute 'get'
+2025-08-10 10:45:46 - INFO - Maximum retries reached. Skipping this sample. Error: 'coroutine' object has no attribute 'get'
+2025-08-10 10:45:48 - INFO - Maximum retries reached. Skipping this sample. Error: 'coroutine' object has no attribute 'get'
+2025-08-10 10:45:49 - INFO - Maximum retries reached. Skipping this sample. Error: 'coroutine' object has no attribute 'get'
+2025-08-10 10:45:50 - INFO - Maximum retries reached. Skipping this sample. Error: 'coroutine' object has no attribute 'get'
+2025-08-10 10:45:51 - INFO - Maximum retries reached. Skipping this sample. Error: 'coroutine' object has no attribute 'get'
+2025-08-10 10:45:52 - INFO - Maximum retries reached. Skipping this sample. Error: 'coroutine' object has no attribute 'get'
+2025-08-10 10:45:53 - INFO - Maximum retries reached. Skipping this sample. Error: 'coroutine' object has no attribute 'get'
+2025-08-10 10:45:53 - INFO - Maximum retries reached. Skipping this sample. Error: 'coroutine' object has no attribute 'get'
+2025-08-10 10:45:53 - INFO - Maximum retries reached. Skipping this sample. Error: 'coroutine' object has no attribute 'get'
+2025-08-10 10:45:57 - INFO - Maximum retries reached. Skipping this sample. Error: 'coroutine' object has no attribute 'get'
+2025-08-10 10:45:57 - INFO - Maximum retries reached. Skipping this sample. Error: 'coroutine' object has no attribute 'get'
+2025-08-10 10:45:58 - INFO - Maximum retries reached. Skipping this sample. Error: 'coroutine' object has no attribute 'get'
+2025-08-10 10:45:58 - INFO - Maximum retries reached. Skipping this sample. Error: 'coroutine' object has no attribute 'get'
+2025-08-10 10:45:58 - INFO - Maximum retries reached. Skipping this sample. Error: 'coroutine' object has no attribute 'get'
+2025-08-10 10:45:58 - INFO - Maximum retries reached. Skipping this sample. Error: 'coroutine' object has no attribute 'get'
+2025-08-10 10:45:58 - INFO - Maximum retries reached. Skipping this sample. Error: 'coroutine' object has no attribute 'get'
+2025-08-10 10:45:59 - INFO - Maximum retries reached. Skipping this sample. Error: 'coroutine' object has no attribute 'get'
+2025-08-10 10:46:00 - INFO - Maximum retries reached. Skipping this sample. Error: 'coroutine' object has no attribute 'get'
+2025-08-10 10:46:00 - INFO - Maximum retries reached. Skipping this sample. Error: 'coroutine' object has no attribute 'get'
+2025-08-10 10:46:00 - INFO - Maximum retries reached. Skipping this sample. Error: 'coroutine' object has no attribute 'get'
+2025-08-10 10:46:00 - INFO - Maximum retries reached. Skipping this sample. Error: 'coroutine' object has no attribute 'get'
+2025-08-10 10:46:00 - INFO - Maximum retries reached. Skipping this sample. Error: 'coroutine' object has no attribute 'get'
+2025-08-10 10:46:01 - INFO - Maximum retries reached. Skipping this sample. Error: 'coroutine' object has no attribute 'get'
+2025-08-10 10:46:02 - INFO - Maximum retries reached. Skipping this sample. Error: 'coroutine' object has no attribute 'get'
+2025-08-10 10:46:02 - INFO - Maximum retries reached. Skipping this sample. Error: 'coroutine' object has no attribute 'get'
+2025-08-10 10:46:03 - INFO - Maximum retries reached. Skipping this sample. Error: 'coroutine' object has no attribute 'get'
+2025-08-10 10:46:03 - INFO - Maximum retries reached. Skipping this sample. Error: 'coroutine' object has no attribute 'get'
+2025-08-10 10:46:04 - INFO - Maximum retries reached. Skipping this sample. Error: 'coroutine' object has no attribute 'get'
+2025-08-10 10:46:08 - INFO - Maximum retries reached. Skipping this sample. Error: 'coroutine' object has no attribute 'get'
+2025-08-10 10:46:08 - INFO - Maximum retries reached. Skipping this sample. Error: 'coroutine' object has no attribute 'get'
+2025-08-10 10:46:13 - INFO - Maximum retries reached. Skipping this sample. Error: 'coroutine' object has no attribute 'get'
+2025-08-10 10:46:13 - INFO - Results saved to workspace/Combined/workflows/round_4/0.48000_20250810_104613.csv
+2025-08-10 10:46:13 - INFO - Combined benchmark results:
+2025-08-10 10:46:13 - INFO -   math: Score=0.50000, Cost=3.63866, Samples=34
+2025-08-10 10:46:13 - INFO -   humaneval: Score=0.00000, Cost=0.00000, Samples=33
+2025-08-10 10:46:13 - INFO -   mmlu: Score=0.93939, Cost=1.29728, Samples=33
+2025-08-10 10:46:13 - INFO - Overall average score: 0.48000
+2025-08-10 10:46:13 - INFO - Score for round 4: 0.472
+2025-08-10 10:46:23 - INFO - 
+Mixed probability distribution: [0.45244662 0.39663879 0.075766   0.07514859]
+2025-08-10 10:46:23 - INFO - 
+Sorted rounds: [{'round': 2, 'score': 0.782}, {'round': 1, 'score': 0.774}, {'round': 4, 'score': 0.472}, {'round': 3, 'score': 0.39}]
+2025-08-10 10:46:23 - INFO - 
+Selected index: 0, Selected item: {'round': 2, 'score': 0.782}
+2025-08-10 10:46:23 - INFO - Processed experience data saved to workspace/Combined/workflows/processed_experience.json
+2025-08-10 10:46:23 - INFO - workspace/Combined/workflows/round_2/log.json
+2025-08-10 10:46:27 - INFO - Graph optimization response received successfully
+2025-08-10 10:46:27 - INFO - 
+Mixed probability distribution: [0.45244662 0.39663879 0.075766   0.07514859]
+2025-08-10 10:46:27 - INFO - 
+Sorted rounds: [{'round': 2, 'score': 0.782}, {'round': 1, 'score': 0.774}, {'round': 4, 'score': 0.472}, {'round': 3, 'score': 0.39}]
+2025-08-10 10:46:27 - INFO - 
+Selected index: 0, Selected item: {'round': 2, 'score': 0.782}
+2025-08-10 10:46:27 - INFO - Processed experience data saved to workspace/Combined/workflows/processed_experience.json
+2025-08-10 10:46:27 - INFO - workspace/Combined/workflows/round_2/log.json
+2025-08-10 10:46:31 - INFO - Graph optimization response received successfully
+2025-08-10 10:46:31 - INFO - 
+Mixed probability distribution: [0.45244662 0.39663879 0.075766   0.07514859]
+2025-08-10 10:46:31 - INFO - 
+Sorted rounds: [{'round': 2, 'score': 0.782}, {'round': 1, 'score': 0.774}, {'round': 4, 'score': 0.472}, {'round': 3, 'score': 0.39}]
+2025-08-10 10:46:31 - INFO - 
+Selected index: 1, Selected item: {'round': 1, 'score': 0.774}
+2025-08-10 10:46:31 - INFO - Processed experience data saved to workspace/Combined/workflows/processed_experience.json
+2025-08-10 10:46:31 - INFO - workspace/Combined/workflows/round_1/log.json
+2025-08-10 10:46:36 - INFO - Graph optimization response received successfully
+2025-08-10 10:46:36 - INFO - workspace/Combined/workflows/round_5
+2025-08-10 10:46:55 - INFO - Results saved to workspace/Combined/workflows/round_5/0.75000_20250810_104655.csv
+2025-08-10 10:46:55 - INFO - Combined benchmark results:
+2025-08-10 10:46:55 - INFO -   math: Score=0.44118, Cost=3.97564, Samples=34
+2025-08-10 10:46:55 - INFO -   humaneval: Score=0.93939, Cost=9.24333, Samples=33
+2025-08-10 10:46:55 - INFO -   mmlu: Score=0.87879, Cost=0.43350, Samples=33
+2025-08-10 10:46:55 - INFO - Overall average score: 0.75000
+2025-08-10 10:47:16 - INFO - Results saved to workspace/Combined/workflows/round_5/0.77000_20250810_104716.csv
+2025-08-10 10:47:16 - INFO - Combined benchmark results:
+2025-08-10 10:47:16 - INFO -   math: Score=0.47059, Cost=3.65612, Samples=34
+2025-08-10 10:47:16 - INFO -   humaneval: Score=0.93939, Cost=8.77254, Samples=33
+2025-08-10 10:47:16 - INFO -   mmlu: Score=0.90909, Cost=0.45660, Samples=33
+2025-08-10 10:47:16 - INFO - Overall average score: 0.77000
+2025-08-10 10:47:37 - INFO - Results saved to workspace/Combined/workflows/round_5/0.78000_20250810_104737.csv
+2025-08-10 10:47:37 - INFO - Combined benchmark results:
+2025-08-10 10:47:37 - INFO -   math: Score=0.47059, Cost=3.88117, Samples=34
+2025-08-10 10:47:37 - INFO -   humaneval: Score=0.96970, Cost=9.05795, Samples=33
+2025-08-10 10:47:37 - INFO -   mmlu: Score=0.90909, Cost=0.44506, Samples=33
+2025-08-10 10:47:37 - INFO - Overall average score: 0.78000
+2025-08-10 10:47:51 - INFO - Results saved to workspace/Combined/workflows/round_5/0.77000_20250810_104751.csv
+2025-08-10 10:47:51 - INFO - Combined benchmark results:
+2025-08-10 10:47:51 - INFO -   math: Score=0.50000, Cost=3.76046, Samples=34
+2025-08-10 10:47:51 - INFO -   humaneval: Score=0.93939, Cost=9.25031, Samples=33
+2025-08-10 10:47:51 - INFO -   mmlu: Score=0.87879, Cost=0.40387, Samples=33
+2025-08-10 10:47:51 - INFO - Overall average score: 0.77000
+2025-08-10 10:48:04 - INFO - Results saved to workspace/Combined/workflows/round_5/0.78000_20250810_104804.csv
+2025-08-10 10:48:04 - INFO - Combined benchmark results:
+2025-08-10 10:48:04 - INFO -   math: Score=0.50000, Cost=3.34172, Samples=34
+2025-08-10 10:48:04 - INFO -   humaneval: Score=0.93939, Cost=9.29036, Samples=33
+2025-08-10 10:48:04 - INFO -   mmlu: Score=0.90909, Cost=0.48533, Samples=33
+2025-08-10 10:48:04 - INFO - Overall average score: 0.78000
+2025-08-10 10:48:04 - INFO - Score for round 5: 0.7699999999999999
+2025-08-10 10:48:14 - INFO - 
+Mixed probability distribution: [0.34007108 0.30087868 0.2835123  0.07553794]
+2025-08-10 10:48:14 - INFO - 
+Sorted rounds: [{'round': 2, 'score': 0.782}, {'round': 1, 'score': 0.774}, {'round': 5, 'score': 0.77}, {'round': 4, 'score': 0.472}]
+2025-08-10 10:48:14 - INFO - 
+Selected index: 1, Selected item: {'round': 1, 'score': 0.774}
+2025-08-10 10:48:14 - INFO - Processed experience data saved to workspace/Combined/workflows/processed_experience.json
+2025-08-10 10:48:14 - INFO - workspace/Combined/workflows/round_1/log.json
+2025-08-10 10:48:19 - INFO - Graph optimization response received successfully
+2025-08-10 10:48:19 - INFO - workspace/Combined/workflows/round_6
+2025-08-10 10:48:38 - INFO - Results saved to workspace/Combined/workflows/round_6/0.80000_20250810_104838.csv
+2025-08-10 10:48:38 - INFO - Combined benchmark results:
+2025-08-10 10:48:38 - INFO -   math: Score=0.52941, Cost=10.50742, Samples=34
+2025-08-10 10:48:38 - INFO -   humaneval: Score=0.93939, Cost=7.48302, Samples=33
+2025-08-10 10:48:38 - INFO -   mmlu: Score=0.93939, Cost=5.98393, Samples=33
+2025-08-10 10:48:38 - INFO - Overall average score: 0.80000
+2025-08-10 10:48:58 - INFO - Results saved to workspace/Combined/workflows/round_6/0.81000_20250810_104858.csv
+2025-08-10 10:48:58 - INFO - Combined benchmark results:
+2025-08-10 10:48:58 - INFO -   math: Score=0.55882, Cost=11.20852, Samples=34
+2025-08-10 10:48:58 - INFO -   humaneval: Score=0.93939, Cost=7.97939, Samples=33
+2025-08-10 10:48:58 - INFO -   mmlu: Score=0.93939, Cost=5.73877, Samples=33
+2025-08-10 10:48:58 - INFO - Overall average score: 0.81000
+2025-08-10 10:49:18 - INFO - Results saved to workspace/Combined/workflows/round_6/0.76000_20250810_104918.csv
+2025-08-10 10:49:18 - INFO - Combined benchmark results:
+2025-08-10 10:49:18 - INFO -   math: Score=0.44118, Cost=10.58676, Samples=34
+2025-08-10 10:49:18 - INFO -   humaneval: Score=0.93939, Cost=7.64154, Samples=33
+2025-08-10 10:49:18 - INFO -   mmlu: Score=0.90909, Cost=5.22349, Samples=33
+2025-08-10 10:49:18 - INFO - Overall average score: 0.76000
+2025-08-10 10:49:36 - INFO - Results saved to workspace/Combined/workflows/round_6/0.77000_20250810_104936.csv
+2025-08-10 10:49:36 - INFO - Combined benchmark results:
+2025-08-10 10:49:36 - INFO -   math: Score=0.50000, Cost=10.78785, Samples=34
+2025-08-10 10:49:36 - INFO -   humaneval: Score=0.93939, Cost=8.12387, Samples=33
+2025-08-10 10:49:36 - INFO -   mmlu: Score=0.87879, Cost=5.41032, Samples=33
+2025-08-10 10:49:36 - INFO - Overall average score: 0.77000
+2025-08-10 10:49:59 - INFO - Results saved to workspace/Combined/workflows/round_6/0.79000_20250810_104959.csv
+2025-08-10 10:49:59 - INFO - Combined benchmark results:
+2025-08-10 10:49:59 - INFO -   math: Score=0.50000, Cost=11.44942, Samples=34
+2025-08-10 10:49:59 - INFO -   humaneval: Score=0.93939, Cost=6.65660, Samples=33
+2025-08-10 10:49:59 - INFO -   mmlu: Score=0.93939, Cost=6.37242, Samples=33
+2025-08-10 10:49:59 - INFO - Overall average score: 0.79000
+2025-08-10 10:49:59 - INFO - Score for round 6: 0.786
+2025-08-10 10:50:09 - INFO - 
+Mixed probability distribution: [0.27873159 0.26306796 0.23526095 0.2229395 ]
+2025-08-10 10:50:09 - INFO - 
+Sorted rounds: [{'round': 6, 'score': 0.786}, {'round': 2, 'score': 0.782}, {'round': 1, 'score': 0.774}, {'round': 5, 'score': 0.77}]
+2025-08-10 10:50:09 - INFO - 
+Selected index: 0, Selected item: {'round': 6, 'score': 0.786}
+2025-08-10 10:50:09 - INFO - Processed experience data saved to workspace/Combined/workflows/processed_experience.json
+2025-08-10 10:50:09 - INFO - workspace/Combined/workflows/round_6/log.json
+2025-08-10 10:50:16 - INFO - Graph optimization response received successfully
+2025-08-10 10:50:16 - INFO - workspace/Combined/workflows/round_7
+2025-08-10 10:50:44 - INFO - Results saved to workspace/Combined/workflows/round_7/0.39000_20250810_105044.csv
+2025-08-10 10:50:44 - INFO - Combined benchmark results:
+2025-08-10 10:50:44 - INFO -   math: Score=0.00000, Cost=21.12031, Samples=34
+2025-08-10 10:50:44 - INFO -   humaneval: Score=0.93939, Cost=9.46864, Samples=33
+2025-08-10 10:50:44 - INFO -   mmlu: Score=0.24242, Cost=12.91881, Samples=33
+2025-08-10 10:50:44 - INFO - Overall average score: 0.39000
+2025-08-10 10:51:13 - INFO - Results saved to workspace/Combined/workflows/round_7/0.39000_20250810_105113.csv
+2025-08-10 10:51:13 - INFO - Combined benchmark results:
+2025-08-10 10:51:13 - INFO -   math: Score=0.00000, Cost=19.67436, Samples=34
+2025-08-10 10:51:13 - INFO -   humaneval: Score=0.93939, Cost=8.81666, Samples=33
+2025-08-10 10:51:13 - INFO -   mmlu: Score=0.24242, Cost=14.85615, Samples=33
+2025-08-10 10:51:13 - INFO - Overall average score: 0.39000
+2025-08-10 10:51:47 - INFO - Results saved to workspace/Combined/workflows/round_7/0.39000_20250810_105147.csv
+2025-08-10 10:51:47 - INFO - Combined benchmark results:
+2025-08-10 10:51:47 - INFO -   math: Score=0.00000, Cost=19.30086, Samples=34
+2025-08-10 10:51:47 - INFO -   humaneval: Score=0.93939, Cost=8.57359, Samples=33
+2025-08-10 10:51:47 - INFO -   mmlu: Score=0.24242, Cost=12.57126, Samples=33
+2025-08-10 10:51:47 - INFO - Overall average score: 0.39000
+2025-08-10 10:52:15 - INFO - Results saved to workspace/Combined/workflows/round_7/0.39000_20250810_105215.csv
+2025-08-10 10:52:15 - INFO - Combined benchmark results:
+2025-08-10 10:52:15 - INFO -   math: Score=0.00000, Cost=19.86561, Samples=34
+2025-08-10 10:52:15 - INFO -   humaneval: Score=0.93939, Cost=9.08130, Samples=33
+2025-08-10 10:52:15 - INFO -   mmlu: Score=0.24242, Cost=12.25051, Samples=33
+2025-08-10 10:52:15 - INFO - Overall average score: 0.39000
+2025-08-10 10:52:44 - INFO - Results saved to workspace/Combined/workflows/round_7/0.39000_20250810_105244.csv
+2025-08-10 10:52:44 - INFO - Combined benchmark results:
+2025-08-10 10:52:44 - INFO -   math: Score=0.00000, Cost=21.11394, Samples=34
+2025-08-10 10:52:44 - INFO -   humaneval: Score=0.93939, Cost=8.39025, Samples=33
+2025-08-10 10:52:44 - INFO -   mmlu: Score=0.24242, Cost=12.48127, Samples=33
+2025-08-10 10:52:44 - INFO - Overall average score: 0.39000
+2025-08-10 10:52:44 - INFO - Score for round 7: 0.39
+2025-08-10 10:52:54 - INFO - 
+Mixed probability distribution: [0.27873159 0.26306796 0.23526095 0.2229395 ]
+2025-08-10 10:52:54 - INFO - 
+Sorted rounds: [{'round': 6, 'score': 0.786}, {'round': 2, 'score': 0.782}, {'round': 1, 'score': 0.774}, {'round': 5, 'score': 0.77}]
+2025-08-10 10:52:54 - INFO - 
+Selected index: 0, Selected item: {'round': 6, 'score': 0.786}
+2025-08-10 10:52:54 - INFO - Processed experience data saved to workspace/Combined/workflows/processed_experience.json
+2025-08-10 10:52:54 - INFO - workspace/Combined/workflows/round_6/log.json
+2025-08-10 10:52:57 - INFO - Graph optimization response received successfully
+2025-08-10 10:52:57 - INFO - 
+Mixed probability distribution: [0.27873159 0.26306796 0.23526095 0.2229395 ]
+2025-08-10 10:52:57 - INFO - 
+Sorted rounds: [{'round': 6, 'score': 0.786}, {'round': 2, 'score': 0.782}, {'round': 1, 'score': 0.774}, {'round': 5, 'score': 0.77}]
+2025-08-10 10:52:57 - INFO - 
+Selected index: 1, Selected item: {'round': 2, 'score': 0.782}
+2025-08-10 10:52:58 - INFO - Processed experience data saved to workspace/Combined/workflows/processed_experience.json
+2025-08-10 10:52:58 - INFO - workspace/Combined/workflows/round_2/log.json
+2025-08-10 10:53:02 - INFO - Graph optimization response received successfully
+2025-08-10 10:53:02 - INFO - 
+Mixed probability distribution: [0.27873159 0.26306796 0.23526095 0.2229395 ]
+2025-08-10 10:53:02 - INFO - 
+Sorted rounds: [{'round': 6, 'score': 0.786}, {'round': 2, 'score': 0.782}, {'round': 1, 'score': 0.774}, {'round': 5, 'score': 0.77}]
+2025-08-10 10:53:02 - INFO - 
+Selected index: 2, Selected item: {'round': 1, 'score': 0.774}
+2025-08-10 10:53:02 - INFO - Processed experience data saved to workspace/Combined/workflows/processed_experience.json
+2025-08-10 10:53:02 - INFO - workspace/Combined/workflows/round_1/log.json
+2025-08-10 10:53:08 - INFO - Graph optimization response received successfully
+2025-08-10 10:53:08 - INFO - workspace/Combined/workflows/round_8
+2025-08-10 10:53:27 - INFO - Results saved to workspace/Combined/workflows/round_8/0.72000_20250810_105327.csv
+2025-08-10 10:53:27 - INFO - Combined benchmark results:
+2025-08-10 10:53:27 - INFO -   math: Score=0.32353, Cost=10.84136, Samples=34
+2025-08-10 10:53:27 - INFO -   humaneval: Score=0.93939, Cost=6.87532, Samples=33
+2025-08-10 10:53:27 - INFO -   mmlu: Score=0.90909, Cost=6.85494, Samples=33
+2025-08-10 10:53:27 - INFO - Overall average score: 0.72000
+2025-08-10 10:53:44 - INFO - Results saved to workspace/Combined/workflows/round_8/0.72000_20250810_105344.csv
+2025-08-10 10:53:44 - INFO - Combined benchmark results:
+2025-08-10 10:53:44 - INFO -   math: Score=0.29412, Cost=11.03088, Samples=34
+2025-08-10 10:53:44 - INFO -   humaneval: Score=0.93939, Cost=7.41177, Samples=33
+2025-08-10 10:53:44 - INFO -   mmlu: Score=0.93939, Cost=5.80721, Samples=33
+2025-08-10 10:53:44 - INFO - Overall average score: 0.72000
+2025-08-10 10:54:01 - INFO - Results saved to workspace/Combined/workflows/round_8/0.70000_20250810_105401.csv
+2025-08-10 10:54:01 - INFO - Combined benchmark results:
+2025-08-10 10:54:01 - INFO -   math: Score=0.26471, Cost=10.87102, Samples=34
+2025-08-10 10:54:01 - INFO -   humaneval: Score=0.93939, Cost=7.25492, Samples=33
+2025-08-10 10:54:01 - INFO -   mmlu: Score=0.90909, Cost=5.29572, Samples=33
+2025-08-10 10:54:01 - INFO - Overall average score: 0.70000
+2025-08-10 10:54:18 - INFO - Results saved to workspace/Combined/workflows/round_8/0.71000_20250810_105418.csv
+2025-08-10 10:54:18 - INFO - Combined benchmark results:
+2025-08-10 10:54:18 - INFO -   math: Score=0.26471, Cost=11.53012, Samples=34
+2025-08-10 10:54:18 - INFO -   humaneval: Score=0.93939, Cost=7.15728, Samples=33
+2025-08-10 10:54:18 - INFO -   mmlu: Score=0.93939, Cost=6.47526, Samples=33
+2025-08-10 10:54:18 - INFO - Overall average score: 0.71000
+2025-08-10 10:54:40 - INFO - Results saved to workspace/Combined/workflows/round_8/0.70000_20250810_105440.csv
+2025-08-10 10:54:40 - INFO - Combined benchmark results:
+2025-08-10 10:54:40 - INFO -   math: Score=0.26471, Cost=11.27895, Samples=34
+2025-08-10 10:54:40 - INFO -   humaneval: Score=0.93939, Cost=6.83755, Samples=33
+2025-08-10 10:54:40 - INFO -   mmlu: Score=0.90909, Cost=6.22569, Samples=33
+2025-08-10 10:54:40 - INFO - Overall average score: 0.70000
+2025-08-10 10:54:40 - INFO - Score for round 8: 0.71
+2025-08-10 10:54:50 - INFO - 
+Mixed probability distribution: [0.27873159 0.26306796 0.23526095 0.2229395 ]
+2025-08-10 10:54:50 - INFO - 
+Sorted rounds: [{'round': 6, 'score': 0.786}, {'round': 2, 'score': 0.782}, {'round': 1, 'score': 0.774}, {'round': 5, 'score': 0.77}]
+2025-08-10 10:54:50 - INFO - 
+Selected index: 0, Selected item: {'round': 6, 'score': 0.786}
+2025-08-10 10:54:50 - INFO - Processed experience data saved to workspace/Combined/workflows/processed_experience.json
+2025-08-10 10:54:50 - INFO - workspace/Combined/workflows/round_6/log.json
+2025-08-10 10:54:54 - INFO - Graph optimization response received successfully
+2025-08-10 10:54:54 - INFO - 
+Mixed probability distribution: [0.27873159 0.26306796 0.23526095 0.2229395 ]
+2025-08-10 10:54:54 - INFO - 
+Sorted rounds: [{'round': 6, 'score': 0.786}, {'round': 2, 'score': 0.782}, {'round': 1, 'score': 0.774}, {'round': 5, 'score': 0.77}]
+2025-08-10 10:54:54 - INFO - 
+Selected index: 1, Selected item: {'round': 2, 'score': 0.782}
+2025-08-10 10:54:54 - INFO - Processed experience data saved to workspace/Combined/workflows/processed_experience.json
+2025-08-10 10:54:54 - INFO - workspace/Combined/workflows/round_2/log.json
+2025-08-10 10:55:00 - INFO - Graph optimization response received successfully
+2025-08-10 10:55:00 - INFO - 
+Mixed probability distribution: [0.27873159 0.26306796 0.23526095 0.2229395 ]
+2025-08-10 10:55:00 - INFO - 
+Sorted rounds: [{'round': 6, 'score': 0.786}, {'round': 2, 'score': 0.782}, {'round': 1, 'score': 0.774}, {'round': 5, 'score': 0.77}]
+2025-08-10 10:55:00 - INFO - 
+Selected index: 0, Selected item: {'round': 6, 'score': 0.786}
+2025-08-10 10:55:00 - INFO - Processed experience data saved to workspace/Combined/workflows/processed_experience.json
+2025-08-10 10:55:00 - INFO - workspace/Combined/workflows/round_6/log.json
+2025-08-10 10:55:03 - INFO - Graph optimization response received successfully
+2025-08-10 10:55:03 - INFO - 
+Mixed probability distribution: [0.27873159 0.26306796 0.23526095 0.2229395 ]
+2025-08-10 10:55:03 - INFO - 
+Sorted rounds: [{'round': 6, 'score': 0.786}, {'round': 2, 'score': 0.782}, {'round': 1, 'score': 0.774}, {'round': 5, 'score': 0.77}]
+2025-08-10 10:55:03 - INFO - 
+Selected index: 0, Selected item: {'round': 6, 'score': 0.786}
+2025-08-10 10:55:03 - INFO - Processed experience data saved to workspace/Combined/workflows/processed_experience.json
+2025-08-10 10:55:03 - INFO - workspace/Combined/workflows/round_6/log.json
+2025-08-10 10:55:07 - INFO - Graph optimization response received successfully
+2025-08-10 10:55:07 - INFO - 
+Mixed probability distribution: [0.27873159 0.26306796 0.23526095 0.2229395 ]
+2025-08-10 10:55:07 - INFO - 
+Sorted rounds: [{'round': 6, 'score': 0.786}, {'round': 2, 'score': 0.782}, {'round': 1, 'score': 0.774}, {'round': 5, 'score': 0.77}]
+2025-08-10 10:55:07 - INFO - 
+Selected index: 3, Selected item: {'round': 5, 'score': 0.77}
+2025-08-10 10:55:07 - INFO - Processed experience data saved to workspace/Combined/workflows/processed_experience.json
+2025-08-10 10:55:07 - INFO - workspace/Combined/workflows/round_5/log.json
+2025-08-10 10:55:11 - INFO - Graph optimization response received successfully
+2025-08-10 10:55:11 - INFO - workspace/Combined/workflows/round_9
+2025-08-10 10:55:36 - INFO - Results saved to workspace/Combined/workflows/round_9/0.39000_20250810_105536.csv
+2025-08-10 10:55:36 - INFO - Combined benchmark results:
+2025-08-10 10:55:36 - INFO -   math: Score=0.00000, Cost=18.68399, Samples=34
+2025-08-10 10:55:36 - INFO -   humaneval: Score=0.93939, Cost=14.83696, Samples=33
+2025-08-10 10:55:36 - INFO -   mmlu: Score=0.24242, Cost=19.28542, Samples=33
+2025-08-10 10:55:36 - INFO - Overall average score: 0.39000
+2025-08-10 10:56:04 - INFO - Results saved to workspace/Combined/workflows/round_9/0.39000_20250810_105604.csv
+2025-08-10 10:56:04 - INFO - Combined benchmark results:
+2025-08-10 10:56:04 - INFO -   math: Score=0.00000, Cost=19.46992, Samples=34
+2025-08-10 10:56:04 - INFO -   humaneval: Score=0.93939, Cost=12.92896, Samples=33
+2025-08-10 10:56:04 - INFO -   mmlu: Score=0.24242, Cost=21.27671, Samples=33
+2025-08-10 10:56:04 - INFO - Overall average score: 0.39000
+2025-08-10 10:56:29 - INFO - Results saved to workspace/Combined/workflows/round_9/0.39000_20250810_105629.csv
+2025-08-10 10:56:29 - INFO - Combined benchmark results:
+2025-08-10 10:56:29 - INFO -   math: Score=0.00000, Cost=19.07422, Samples=34
+2025-08-10 10:56:29 - INFO -   humaneval: Score=0.93939, Cost=13.17998, Samples=33
+2025-08-10 10:56:29 - INFO -   mmlu: Score=0.24242, Cost=21.07578, Samples=33
+2025-08-10 10:56:29 - INFO - Overall average score: 0.39000
+2025-08-10 10:56:55 - INFO - Results saved to workspace/Combined/workflows/round_9/0.39000_20250810_105655.csv
+2025-08-10 10:56:55 - INFO - Combined benchmark results:
+2025-08-10 10:56:55 - INFO -   math: Score=0.00000, Cost=18.32309, Samples=34
+2025-08-10 10:56:55 - INFO -   humaneval: Score=0.93939, Cost=14.66764, Samples=33
+2025-08-10 10:56:55 - INFO -   mmlu: Score=0.24242, Cost=19.69595, Samples=33
+2025-08-10 10:56:55 - INFO - Overall average score: 0.39000
+2025-08-10 10:57:24 - INFO - Results saved to workspace/Combined/workflows/round_9/0.39000_20250810_105724.csv
+2025-08-10 10:57:24 - INFO - Combined benchmark results:
+2025-08-10 10:57:24 - INFO -   math: Score=0.00000, Cost=16.10034, Samples=34
+2025-08-10 10:57:24 - INFO -   humaneval: Score=0.93939, Cost=13.67574, Samples=33
+2025-08-10 10:57:24 - INFO -   mmlu: Score=0.24242, Cost=21.96095, Samples=33
+2025-08-10 10:57:24 - INFO - Overall average score: 0.39000
+2025-08-10 10:57:24 - INFO - Score for round 9: 0.39
+2025-08-10 10:57:34 - INFO - 
+Mixed probability distribution: [0.27873159 0.26306796 0.23526095 0.2229395 ]
+2025-08-10 10:57:34 - INFO - 
+Sorted rounds: [{'round': 6, 'score': 0.786}, {'round': 2, 'score': 0.782}, {'round': 1, 'score': 0.774}, {'round': 5, 'score': 0.77}]
+2025-08-10 10:57:34 - INFO - 
+Selected index: 3, Selected item: {'round': 5, 'score': 0.77}
+2025-08-10 10:57:34 - INFO - Processed experience data saved to workspace/Combined/workflows/processed_experience.json
+2025-08-10 10:57:34 - INFO - workspace/Combined/workflows/round_5/log.json
+2025-08-10 10:57:40 - INFO - Graph optimization response received successfully
+2025-08-10 10:57:40 - INFO - workspace/Combined/workflows/round_10
+2025-08-10 10:58:05 - INFO - Results saved to workspace/Combined/workflows/round_10/0.39000_20250810_105805.csv
+2025-08-10 10:58:05 - INFO - Combined benchmark results:
+2025-08-10 10:58:05 - INFO -   math: Score=0.00000, Cost=18.43736, Samples=34
+2025-08-10 10:58:05 - INFO -   humaneval: Score=0.93939, Cost=15.65794, Samples=33
+2025-08-10 10:58:05 - INFO -   mmlu: Score=0.24242, Cost=20.07423, Samples=33
+2025-08-10 10:58:05 - INFO - Overall average score: 0.39000
+2025-08-10 10:58:31 - INFO - Results saved to workspace/Combined/workflows/round_10/0.39000_20250810_105831.csv
+2025-08-10 10:58:31 - INFO - Combined benchmark results:
+2025-08-10 10:58:31 - INFO -   math: Score=0.00000, Cost=17.28928, Samples=34
+2025-08-10 10:58:31 - INFO -   humaneval: Score=0.93939, Cost=15.93202, Samples=33
+2025-08-10 10:58:31 - INFO -   mmlu: Score=0.24242, Cost=19.69316, Samples=33
+2025-08-10 10:58:31 - INFO - Overall average score: 0.39000
+2025-08-10 10:59:00 - INFO - Results saved to workspace/Combined/workflows/round_10/0.39000_20250810_105900.csv
+2025-08-10 10:59:00 - INFO - Combined benchmark results:
+2025-08-10 10:59:00 - INFO -   math: Score=0.00000, Cost=18.89981, Samples=34
+2025-08-10 10:59:00 - INFO -   humaneval: Score=0.93939, Cost=13.94668, Samples=33
+2025-08-10 10:59:00 - INFO -   mmlu: Score=0.24242, Cost=19.16086, Samples=33
+2025-08-10 10:59:00 - INFO - Overall average score: 0.39000
+2025-08-10 10:59:28 - INFO - Results saved to workspace/Combined/workflows/round_10/0.40000_20250810_105928.csv
+2025-08-10 10:59:28 - INFO - Combined benchmark results:
+2025-08-10 10:59:28 - INFO -   math: Score=0.00000, Cost=17.00544, Samples=34
+2025-08-10 10:59:28 - INFO -   humaneval: Score=0.96970, Cost=15.76963, Samples=33
+2025-08-10 10:59:28 - INFO -   mmlu: Score=0.24242, Cost=18.42546, Samples=33
+2025-08-10 10:59:28 - INFO - Overall average score: 0.40000
+2025-08-10 10:59:56 - INFO - Results saved to workspace/Combined/workflows/round_10/0.39000_20250810_105956.csv
+2025-08-10 10:59:56 - INFO - Combined benchmark results:
+2025-08-10 10:59:56 - INFO -   math: Score=0.00000, Cost=18.17928, Samples=34
+2025-08-10 10:59:56 - INFO -   humaneval: Score=0.93939, Cost=15.16074, Samples=33
+2025-08-10 10:59:56 - INFO -   mmlu: Score=0.24242, Cost=20.43743, Samples=33
+2025-08-10 10:59:56 - INFO - Overall average score: 0.39000
+2025-08-10 10:59:56 - INFO - Score for round 10: 0.392
+2025-08-10 11:00:06 - INFO - 
+Mixed probability distribution: [0.27873159 0.26306796 0.23526095 0.2229395 ]
+2025-08-10 11:00:06 - INFO - 
+Sorted rounds: [{'round': 6, 'score': 0.786}, {'round': 2, 'score': 0.782}, {'round': 1, 'score': 0.774}, {'round': 5, 'score': 0.77}]
+2025-08-10 11:00:06 - INFO - 
+Selected index: 3, Selected item: {'round': 5, 'score': 0.77}
+2025-08-10 11:00:06 - INFO - Processed experience data saved to workspace/Combined/workflows/processed_experience.json
+2025-08-10 11:00:06 - INFO - workspace/Combined/workflows/round_5/log.json
+2025-08-10 11:00:13 - INFO - Graph optimization response received successfully
+2025-08-10 11:00:13 - INFO - workspace/Combined/workflows/round_11
+2025-08-10 11:00:31 - INFO - Results saved to workspace/Combined/workflows/round_11/0.68000_20250810_110031.csv
+2025-08-10 11:00:31 - INFO - Combined benchmark results:
+2025-08-10 11:00:31 - INFO -   math: Score=0.44118, Cost=6.81668, Samples=34
+2025-08-10 11:00:31 - INFO -   humaneval: Score=0.93939, Cost=10.89021, Samples=33
+2025-08-10 11:00:31 - INFO -   mmlu: Score=0.66667, Cost=10.36758, Samples=33
+2025-08-10 11:00:31 - INFO - Overall average score: 0.68000
+2025-08-10 11:00:49 - INFO - Results saved to workspace/Combined/workflows/round_11/0.69000_20250810_110049.csv
+2025-08-10 11:00:49 - INFO - Combined benchmark results:
+2025-08-10 11:00:49 - INFO -   math: Score=0.44118, Cost=8.91938, Samples=34
+2025-08-10 11:00:49 - INFO -   humaneval: Score=0.93939, Cost=10.35011, Samples=33
+2025-08-10 11:00:49 - INFO -   mmlu: Score=0.69697, Cost=8.53444, Samples=33
+2025-08-10 11:00:49 - INFO - Overall average score: 0.69000
+2025-08-10 11:01:07 - INFO - Results saved to workspace/Combined/workflows/round_11/0.71000_20250810_110107.csv
+2025-08-10 11:01:07 - INFO - Combined benchmark results:
+2025-08-10 11:01:07 - INFO -   math: Score=0.52941, Cost=6.39896, Samples=34
+2025-08-10 11:01:07 - INFO -   humaneval: Score=0.93939, Cost=10.82916, Samples=33
+2025-08-10 11:01:07 - INFO -   mmlu: Score=0.66667, Cost=9.64090, Samples=33
+2025-08-10 11:01:07 - INFO - Overall average score: 0.71000
+2025-08-10 11:01:26 - INFO - Results saved to workspace/Combined/workflows/round_11/0.70000_20250810_110126.csv
+2025-08-10 11:01:26 - INFO - Combined benchmark results:
+2025-08-10 11:01:26 - INFO -   math: Score=0.50000, Cost=6.32811, Samples=34
+2025-08-10 11:01:26 - INFO -   humaneval: Score=0.93939, Cost=11.41425, Samples=33
+2025-08-10 11:01:26 - INFO -   mmlu: Score=0.66667, Cost=10.80562, Samples=33
+2025-08-10 11:01:26 - INFO - Overall average score: 0.70000
+2025-08-10 11:01:44 - INFO - Results saved to workspace/Combined/workflows/round_11/0.69000_20250810_110144.csv
+2025-08-10 11:01:44 - INFO - Combined benchmark results:
+2025-08-10 11:01:44 - INFO -   math: Score=0.50000, Cost=7.16563, Samples=34
+2025-08-10 11:01:44 - INFO -   humaneval: Score=0.93939, Cost=11.84485, Samples=33
+2025-08-10 11:01:44 - INFO -   mmlu: Score=0.63636, Cost=8.20542, Samples=33
+2025-08-10 11:01:44 - INFO - Overall average score: 0.69000
+2025-08-10 11:01:44 - INFO - Score for round 11: 0.6940000000000001
+2025-08-10 11:01:44 - INFO - Convergence detected, occurred in round 6, final round is 10
+2025-08-10 11:01:44 - INFO - Round 1: Average Score = 0.7740, Standard Deviation = 0.0102
+2025-08-10 11:01:44 - INFO - Round 2: Average Score = 0.7820, Standard Deviation = 0.0172
+2025-08-10 11:01:44 - INFO - Round 3: Average Score = 0.3900, Standard Deviation = 0.0000
+2025-08-10 11:01:44 - INFO - Round 4: Average Score = 0.4720, Standard Deviation = 0.0147
+2025-08-10 11:01:44 - INFO - Round 5: Average Score = 0.7700, Standard Deviation = 0.0110
+2025-08-10 11:01:44 - INFO - Round 6: Average Score = 0.7860, Standard Deviation = 0.0185
+2025-08-10 11:01:44 - INFO - Round 7: Average Score = 0.3900, Standard Deviation = 0.0000
+2025-08-10 11:01:44 - INFO - Round 8: Average Score = 0.7100, Standard Deviation = 0.0089
+2025-08-10 11:01:44 - INFO - Round 9: Average Score = 0.3900, Standard Deviation = 0.0000
+2025-08-10 11:01:44 - INFO - Round 10: Average Score = 0.3920, Standard Deviation = 0.0040
+2025-08-10 11:01:44 - INFO - Round 11: Average Score = 0.6940, Standard Deviation = 0.0102

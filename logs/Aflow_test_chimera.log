@@ -1,0 +1,23 @@
+2025-08-10 11:06:47 - INFO - Skipping datasets as data/datasets already exists.
+2025-08-10 11:06:49 - INFO - Interrupted during Test run. Exiting gracefully.
+2025-08-10 11:07:05 - INFO - Skipping datasets as data/datasets already exists.
+2025-08-10 11:08:16 - INFO - Results saved to workspace/Combined/workflows_test/round_6/0.75500_20250810_110816.csv
+2025-08-10 11:08:16 - INFO - Combined benchmark results:
+2025-08-10 11:08:16 - INFO -   math: Score=0.59603, Cost=181.48804, Samples=151
+2025-08-10 11:08:16 - INFO -   humaneval: Score=0.90826, Cost=141.09682, Samples=109
+2025-08-10 11:08:16 - INFO -   mmlu: Score=0.80714, Cost=146.59107, Samples=140
+2025-08-10 11:08:16 - INFO - Overall average score: 0.75500
+2025-08-10 11:08:44 - INFO - Skipping datasets as data/datasets already exists.
+2025-08-10 11:11:52 - INFO - Results saved to workspace/Combined/workflows_test/round_6/0.76750_20250810_111152.csv
+2025-08-10 11:11:52 - INFO - Combined benchmark results:
+2025-08-10 11:11:52 - INFO -   math: Score=0.60265, Cost=172.78484, Samples=151
+2025-08-10 11:11:52 - INFO -   humaneval: Score=0.92661, Cost=160.79755, Samples=109
+2025-08-10 11:11:52 - INFO -   mmlu: Score=0.82143, Cost=153.64021, Samples=140
+2025-08-10 11:11:52 - INFO - Overall average score: 0.76750
+2025-08-10 11:12:00 - INFO - Skipping datasets as data/datasets already exists.
+2025-08-10 11:17:29 - INFO - Results saved to workspace/Combined/workflows_test/round_6/0.75750_20250810_111729.csv
+2025-08-10 11:17:29 - INFO - Combined benchmark results:
+2025-08-10 11:17:29 - INFO -   math: Score=0.60927, Cost=204.18611, Samples=151
+2025-08-10 11:17:29 - INFO -   humaneval: Score=0.89908, Cost=126.93212, Samples=109
+2025-08-10 11:17:29 - INFO -   mmlu: Score=0.80714, Cost=142.86900, Samples=140
+2025-08-10 11:17:29 - INFO - Overall average score: 0.75750
